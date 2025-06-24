@@ -1,0 +1,721 @@
+/*========================
+    CONTEUDO PADRAO
+==========================*/
+
+:root {
+  --cor-primaria: #023047;
+  --cor-secundaria: #07547a;
+  --cor-destaque: #ffb703;
+  --cor-fundo: #f5f5f5;
+  --cor-texto: #333;
+  --cor-link: #07547a;
+  --cor-hover: #ffb703;
+  --cor-footer: #e0e0e0;
+  --cor-footer-texto: #000;
+  --accent-color: #07547a;
+  --primary-color: #023047;
+  --text-color: #333;
+  --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-serif: Georgia, 'Times New Roman', Times, serif;
+  --bg-color: #0d1117;
+  --card-color: #e0e0e0;
+ 
+  --text-color: #c9d1d9;
+  --accent: #1f6feb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/*========================
+    SECAO CABECALHO
+==========================*/
+header {
+    background-color: #1e2a3a;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+header:hover {
+    background-color: #273c56;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #1e2a3a;
+    background-color: #f1c40f;
+    border-radius: 5px;
+}
+
+nav ul li a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #f1c40f;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*========================
+    SECAO INTRODUCAO
+==========================*/
+.intro {
+    
+    text-align: center;
+    color: #ffff;
+    padding: 120px 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation: fadeIn 1s ease-out;
+}
+
+.intro::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    color: #f4f7fa;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*========================
+    SECAO LINGUAGENS
+==========================*/
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.servicos {
+    background: linear-gradient(135deg, #1e2a3a 0%, #4a6e87 100%);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.servicos h2 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #f1c40f;
+}
+
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    animation: fadeIn 1s ease-out 0.5s;
+}
+
+.servico {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.servico h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #f1c40f;
+}
+
+.servico p {
+    font-size: 18px;
+    text-align: center;
+    color: #ecf0f1;
+    line-height: 1.6;
+}
+
+.servico:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*========================
+    SECAO RODAPE
+==========================*/
+footer {
+    background-color: #1e2a3a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+
+
+/*========================
+    ANIMACAO ENTRADA
+==========================*/
+.content-to-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.content-to-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*========================
+    SECAO CARROSSEL
+==========================*/
+.carousel-container {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+}
+
+.carousel {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 60s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-25%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    75% {
+        transform: translateX(-75%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel-item:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+
+
+/*========================
+    SECAO CRIADOR
+==========================*/
+
+
+.about-creator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  gap: 3rem;
+  flex-wrap: wrap;
+  animation: fadeIn 1s ease forwards;
+}
+
+.about-creator img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-creator img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.about-creator-content {
+  max-width: 500px;
+  text-align: left;
+}
+
+.about-creator-content h2 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.about-creator-content h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #5772fd;
+}
+
+.about-creator-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #000000;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.social{
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+  font-size: 1.2rem;
+}
+
+.social:hover {
+  transform: translateY(-5px);
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+/*========================
+    SECAO PROJETOS
+==========================*/
+
+.sobre {
+    background-color: #fff;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    animation: fadeIn 1s ease-out;
+}
+
+.section {
+  background-color: #ffff;
+  color: #ffff;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+#negrito{
+    color: #ffff;
+}
+
+
+.title {
+  font-size: 2em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.title span {
+  color: #023047;
+  font-size: 2.5em;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.timeline {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background-color: #023047;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.job {
+  position: relative;
+  background-color: #161b22;
+  padding: 20px 25px;
+  border-radius: 10px;
+  margin-bottom: 60px;
+  width: 45%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  border-left: 4px solid #023047;
+}
+
+.job:nth-child(odd) {
+  left: 0;
+  margin-right: auto;
+}
+
+.job:nth-child(even) {
+  right: 0;
+  margin-left: auto;
+}
+
+.job::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 14px;
+  height: 14px;
+  background-color: #023047;
+  border: 2px solid #0d1117;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.job:nth-child(odd)::before {
+  right: -36px;
+}
+
+.job:nth-child(even)::before {
+  left: -36px;
+}
+
+.job strong {
+  color: #07547a;
+  font-weight: bold;
+  font-size: 1.1em;
+  display: block;
+}
+
+.job .badges {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background-color: #21262d;
+  color: #c9d1d9;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 0.8em;
+}
+
+.job > p:first-child {
+  font-size: 0.95em;
+  margin-bottom: 8px;
+  color: #8b949e;
+}
+
+.job > p:nth-child(2) {
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.section a {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #c9d1d9;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.7em;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.section a:hover{
+color: #f1c40f;
+}
+
+/* ========================
+   CV
+===========================*/
+
+        .download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* menor espaçamento entre ícone e texto */
+    padding: 10px 20px; /* botão mais compacto */
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px; /* ainda arredondado, mas proporcional */
+    font-size: 15px; /* texto um pouco menor */
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    border: 2px solid #2563eb;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    min-width: unset; /* REMOVE a largura mínima */
+    white-space: nowrap;
+}
+
+
+        .download-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .download-btn:hover::before {
+            left: 100%;
+        }
+
+        .download-btn:hover {
+            background-color: white;
+            color: #2563eb;
+            border-color: #2563eb;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+        }
+
+        .download-btn:active {
+            transform: translateY(-1px) scale(1.02);
+            transition: all 0.1s;
+        }
+
+        .download-icon {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .download-btn:hover .download-icon {
+            transform: translateY(2px);
+        }
+
+
+
+
+/* ========================
+   RESPONSIVIDADE
+===========================*/
+
+/* Para telas grandes (desktops e telas ultra-wide) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Tablets e pequenos laptops */
+@media (max-width: 1024px) {
+  nav ul {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .about-creator {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-creator-content {
+    max-width: 100%;
+  }
+
+  .servicos h2 {
+    font-size: 36px;
+  }
+
+  .servico h3 {
+    font-size: 24px;
+  }
+}
+
+/* Celulares grandes (phablets e afins) */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .intro {
+    padding: 80px 20px;
+  }
+
+  .servicos-container {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-container {
+    width: 95%;
+  }
+
+  .about-creator {
+    padding: 2rem 1rem;
+  }
+
+  .about-creator img {
+    width: 180px;
+    height: 180px;
+  }
+   .socials img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .job {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .timeline::before {
+    left: 10px;
+    transform: none;
+    opacity: 0%;
+  }
+
+  .job::before {
+    display: none;
+  }
+
+  .section {
+    padding: 40px 10px;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .title span {
+    font-size: 2em;
+  }
+
+  .servico {
+    padding: 20px;
+  }
+
+  .servico p {
+    font-size: 16px;
+  }
+
+  .about-creator-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-creator-content h4 {
+    font-size: 1rem;
+  }
+
+  .about-creator-content p {
+    font-size: 0.95rem;
+  }
+
+  .socials a {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
