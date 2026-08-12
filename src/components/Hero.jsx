@@ -9,8 +9,7 @@ export default function Hero() {
       className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-sky-100 via-sky-200 to-white px-4 text-center"
     >
       {/* Conteúdo principal */}
-      <div className="relative z-20 flex flex-col items-center">
-
+      <div className="relative z-20 flex w-full flex-col items-center pb-40 sm:pb-44">
         {/* Foto */}
         <div className="relative mb-7 h-36 w-36 sm:h-40 sm:w-40">
           <motion.img
@@ -60,7 +59,7 @@ export default function Hero() {
           Olá, eu sou o Pietro.
         </motion.h1>
 
-        {/* Subtítulo principal */}
+        {/* Subtítulo */}
         <motion.h2
           className="mt-4 max-w-2xl text-xl font-semibold leading-relaxed text-sky-700 sm:text-2xl"
           initial={{ y: 30, opacity: 0 }}
@@ -149,3 +148,4 @@ export default function Hero() {
     </section>
   );
 }
+
