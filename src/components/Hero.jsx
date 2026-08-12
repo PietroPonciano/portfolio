@@ -120,7 +120,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="#contato"
+            href="#contact"
             className="rounded-full border border-sky-300 bg-white/60 px-6 py-3 text-sm font-semibold text-sky-700 transition-all hover:-translate-y-1 hover:bg-white"
           >
             Vamos conversar
