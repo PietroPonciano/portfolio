@@ -32,7 +32,7 @@ export default function SwimmingDuck() {
           ? {}
           : {
               repeat: Infinity,
-              duration: 12,
+              duration: 15,
               ease: "linear",
             }
       }
@@ -49,7 +49,7 @@ export default function SwimmingDuck() {
         animate={
           isMobile
             ? {
-                y: [20, 5, 20],
+                y: [10, 20, 10],
                 rotate: [0, 4, -4, 0],
                 scaleX: 1,
               }

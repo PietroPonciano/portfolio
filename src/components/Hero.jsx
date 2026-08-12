@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Conteúdo principal */}
       <div className="relative z-20 flex w-full flex-col items-center pb-40 sm:pb-44">
         {/* Foto */}
-        <div className="relative mb-7 h-36 w-36 sm:h-40 sm:w-40">
+        <div className="relative mt-20 mb-7 h-36 w-36 sm:mt-10 sm:h-40 sm:w-40">
           <motion.img
             src="/images/profile.jpg"
             alt="Pietro Ponciano"
