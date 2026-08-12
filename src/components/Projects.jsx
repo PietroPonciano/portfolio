@@ -3,129 +3,122 @@ import { motion, AnimatePresence } from "framer-motion";
 import SeaweedImage from "./SeaweedImage";
 
 const projects = [
-{
-  id: 1,
-  number: "01",
-  title: "Vida Equilibrada",
-  category: "Web & Mobile",
-  shortDesc:
-    "Aplicação de gestão financeira pessoal desenvolvida para transformar o controle de gastos em uma experiência simples, visual e acessível.",
-  description:
-    "O Vida Equilibrada é uma plataforma de gestão financeira pessoal com dashboard, controle de receitas e despesas, gráficos e relatórios. O projeto também possui uma aplicação mobile, com uma API própria responsável pela comunicação entre as diferentes interfaces.",
-  technologies: [
-    "React",
-    "React Native",
-    "Node.js",
-    "Express",
-    "Sequelize",
-    "PostgreSQL",
-    "JavaScript",
-    "Expo",
-  ],
-  features: [
-    "Dashboard financeiro",
-    "Controle de receitas e despesas",
-    "Gráficos e indicadores",
-    "Relatórios financeiros",
-    "Aplicação web e mobile",
-    "API REST",
-  ],
-  image: "/images/vidaEquilibrada.jpeg",
-  link: "https://vida-equilibrada.pietroponciano.com",
-},
+  {
+    id: 1,
+    number: "01",
+    title: "Vida Equilibrada",
+    category: "Web & Mobile",
+    shortDesc:
+      "Aplicação de gestão financeira pessoal desenvolvida para transformar o controle de gastos em uma experiência simples, visual e acessível.",
+    description:
+      "O Vida Equilibrada é uma plataforma de gestão financeira pessoal com dashboard, controle de receitas e despesas, gráficos e relatórios. O projeto também possui uma aplicação mobile, com uma API própria responsável pela comunicação entre as diferentes interfaces.",
+    technologies: [
+      "React",
+      "React Native",
+      "Node.js",
+      "Express",
+      "Sequelize",
+      "PostgreSQL",
+      "JavaScript",
+      "Expo",
+    ],
+    features: [
+      "Dashboard financeiro",
+      "Controle de receitas e despesas",
+      "Gráficos e indicadores",
+      "Relatórios financeiros",
+      "Aplicação web e mobile",
+      "API REST",
+    ],
+    image: "/images/vidaEquilibrada.jpeg",
+    link: "https://vida-equilibrada.pietroponciano.com",
+  },
 
-{
-  id: 2,
-  number: "02",
-  title: "E-comercio",
-  category: "Full Stack",
-  shortDesc:
-    "Plataforma de comércio eletrônico desenvolvida para explorar o fluxo completo de produtos, carrinho e pedidos.",
-  description:
-    "Uma aplicação de comércio eletrônico com foco nos principais fluxos de uma plataforma de vendas. O projeto conta com gerenciamento de produtos, carrinho de compras, processamento de pedidos e painel administrativo para gerenciamento da loja.",
-  technologies: [
-    "React",
-    "JavaScript",
-    "Node.js",
-    "Express",
-    "Sequelize",
-    "PostgreSQL",
-    "Tailwind CSS",
-  ],
-  features: [
-    "Catálogo de produtos",
-    "Carrinho de compras",
-    "Gerenciamento de pedidos",
-    "Cadastro e edição de produtos",
-    "Painel administrativo",
-    "API REST",
-  ],
-  image: "/images/indice.jpeg",
-  link: "https://github.com/PietroPonciano/e-comercio",
-},
+  {
+    id: 2,
+    number: "02",
+    title: "E-comercio",
+    category: "Full Stack",
+    shortDesc:
+      "Plataforma de comércio eletrônico desenvolvida para explorar o fluxo completo de produtos, carrinho e pedidos.",
+    description:
+      "Uma aplicação de comércio eletrônico com foco nos principais fluxos de uma plataforma de vendas. O projeto conta com gerenciamento de produtos, carrinho de compras, processamento de pedidos e painel administrativo para gerenciamento da loja.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "Sequelize",
+      "PostgreSQL",
+      "Tailwind CSS",
+    ],
+    features: [
+      "Catálogo de produtos",
+      "Carrinho de compras",
+      "Gerenciamento de pedidos",
+      "Cadastro e edição de produtos",
+      "Painel administrativo",
+      "API REST",
+    ],
+    image: "/images/indice.jpeg",
+    link: "https://github.com/PietroPonciano/e-comercio",
+  },
 
-{
-  id: 3,
-  number: "03",
-  title: "OrderFlow",
-  category: "SaaS & Automação",
-  shortDesc:
-    "Plataforma para automatizar pedidos pelo WhatsApp e centralizar produtos, clientes e pedidos em um painel administrativo.",
-  description:
-    "O OrderFlow é uma plataforma SaaS desenvolvida para automatizar o processo de pedidos através da WhatsApp Cloud API. O sistema utiliza um fluxo conversacional baseado em estados para conduzir o cliente desde a escolha dos produtos até a confirmação do pedido, enquanto o painel administrativo permite acompanhar pedidos, produtos, clientes e métricas da operação.",
-  technologies: [
-    "React",
-    "JavaScript",
-    "Vite",
-    "Tailwind CSS",
-    "Node.js",
-    "Express",
-    "Sequelize",
-    "PostgreSQL",
-    "WhatsApp Cloud API",
-    "JWT",
-  ],
-  features: [
-    "Automação de pedidos pelo WhatsApp",
-    "Fluxo conversacional por estados",
-    "Painel administrativo",
-    "Gestão de produtos e categorias",
-    "Acompanhamento de pedidos",
-    "Autenticação com JWT",
-    "Integração com WhatsApp Cloud API",
-  ],
-  image: "/images/orderflow.jpeg",
-  link: "https://github.com/PietroPonciano/orderflow",
-},
+  {
+    id: 3,
+    number: "03",
+    title: "OrderFlow",
+    category: "SaaS & Automação",
+    shortDesc:
+      "Plataforma para automatizar pedidos pelo WhatsApp e centralizar produtos, clientes e pedidos em um painel administrativo.",
+    description:
+      "O OrderFlow é uma plataforma SaaS desenvolvida para automatizar o processo de pedidos através da WhatsApp Cloud API. O sistema utiliza um fluxo conversacional baseado em estados para conduzir o cliente desde a escolha dos produtos até a confirmação do pedido, enquanto o painel administrativo permite acompanhar pedidos, produtos, clientes e métricas da operação.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "Sequelize",
+      "PostgreSQL",
+      "WhatsApp Cloud API",
+      "JWT",
+    ],
+    features: [
+      "Automação de pedidos pelo WhatsApp",
+      "Fluxo conversacional por estados",
+      "Painel administrativo",
+      "Gestão de produtos e categorias",
+      "Acompanhamento de pedidos",
+      "Autenticação com JWT",
+      "Integração com WhatsApp Cloud API",
+    ],
+    image: "/images/orderflow.jpeg",
+    link: "https://github.com/PietroPonciano/orderflow",
+  },
 
-{
-  id: 4,
-  number: "04",
-  title: "API Bootstrap",
-  category: "Backend & Developer Tools",
-  shortDesc:
-    "Aplicação desktop criada para acelerar a criação e configuração inicial de projetos backend em Node.js.",
-  description:
-    "O API Bootstrap é uma ferramenta desktop desenvolvida para automatizar o processo de criação de APIs Node.js. A aplicação permite iniciar novos projetos a partir de templates pré-configurados, reduzindo tarefas repetitivas de configuração e proporcionando uma estrutura inicial organizada para o desenvolvimento.",
-  technologies: [
-    "Electron",
-    "React",
-    "JavaScript",
-    "Node.js",
-    "Express",
-  ],
-  features: [
-    "Criação automatizada de projetos",
-    "Templates de API",
-    "Configuração inicial automática",
-    "Estrutura de projeto padronizada",
-    "Interface desktop",
-    "Automação de tarefas repetitivas",
-  ],
-  image: "/images/api-bootstrap.png",
-  link: "https://github.com/PietroPonciano/api-bootstrap",
-},
-
+  {
+    id: 4,
+    number: "04",
+    title: "API Bootstrap",
+    category: "Backend & Developer Tools",
+    shortDesc:
+      "Aplicação desktop criada para acelerar a criação e configuração inicial de projetos backend em Node.js.",
+    description:
+      "O API Bootstrap é uma ferramenta desktop desenvolvida para automatizar o processo de criação de APIs Node.js. A aplicação permite iniciar novos projetos a partir de templates pré-configurados, reduzindo tarefas repetitivas de configuração e proporcionando uma estrutura inicial organizada para o desenvolvimento.",
+    technologies: ["Electron", "React", "JavaScript", "Node.js", "Express"],
+    features: [
+      "Criação automatizada de projetos",
+      "Templates de API",
+      "Configuração inicial automática",
+      "Estrutura de projeto padronizada",
+      "Interface desktop",
+      "Automação de tarefas repetitivas",
+    ],
+    image: "/images/api-bootstrap.png",
+    link: "https://github.com/PietroPonciano/api-bootstrap",
+  },
 ];
 
 const seaweeds = [
@@ -188,7 +181,7 @@ export default function Projects() {
         size: 5 + Math.random() * 15,
         drift: index % 2 === 0 ? 18 : -18,
       })),
-    []
+    [],
   );
 
   const particles = useMemo(
@@ -201,7 +194,7 @@ export default function Projects() {
         size: 1.5 + Math.random() * 3,
         drift: index % 2 === 0 ? 7 : -7,
       })),
-    []
+    [],
   );
 
   const lights = useMemo(
@@ -212,7 +205,7 @@ export default function Projects() {
         duration: 8 + Math.random() * 4,
         width: 180 + Math.random() * 180,
       })),
-    []
+    [],
   );
 
   /*
@@ -240,8 +233,6 @@ export default function Projects() {
       {/* ========================================================
           PROFUNDIDADE
       ======================================================== */}
-
-
 
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_70%,rgba(14,116,144,0.12),transparent_35%)]" />
 
@@ -389,9 +380,7 @@ export default function Projects() {
                 bottom: 0,
                 width: `${5.5 * seaweed.scale}rem`,
                 opacity: seaweed.opacity,
-                transform: seaweed.flip
-                  ? "scaleX(-1)"
-                  : "scaleX(1)",
+                transform: seaweed.flip ? "scaleX(-1)" : "scaleX(1)",
               }}
             />
           </motion.div>
@@ -422,16 +411,13 @@ export default function Projects() {
           </p>
 
           <h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-            O que já{" "}
-            <span className="text-cyan-200">
-              construí.
-            </span>
+            O que já <span className="text-cyan-200">construí.</span>
           </h2>
 
           <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-sky-200/75 sm:text-lg">
-            Alguns dos projetos que fazem parte da minha jornada,
-            explorando diferentes problemas, tecnologias e formas de
-            construir experiências digitais.
+            Alguns dos projetos que fazem parte da minha jornada, explorando
+            diferentes problemas, tecnologias e formas de construir experiências
+            digitais.
           </p>
         </motion.div>
 
@@ -468,28 +454,24 @@ export default function Projects() {
                 <motion.article
                   key={project.id}
                   className={`
-                    group
-                    relative
-                    overflow-hidden
-                    rounded-3xl
-                    border
-                    border-white/10
-                    bg-white/[0.055]
-                    shadow-[0_25px_80px_rgba(0,0,0,0.18)]
-                    backdrop-blur-md
-                    ${
-                      isRight
-                        ? "md:translate-y-16"
-                        : ""
-                    }
-                  `}
+  group
+  relative
+  overflow-hidden
+  rounded-3xl
+  border
+  border-white/10
+  bg-white/[0.055]
+  shadow-[0_25px_80px_rgba(0,0,0,0.18)]
+  backdrop-blur-md
+  ${isRight ? "md:mt-16" : ""}
+`}
                   initial={{
                     opacity: 0,
                     y: 50,
                   }}
                   whileInView={{
                     opacity: 1,
-                    y: isRight ? 64 : 0,
+                    y: 0,
                   }}
                   viewport={{
                     once: true,
@@ -581,8 +563,6 @@ export default function Projects() {
                     >
                       {project.number}
                     </div>
-
-                    
                   </div>
 
                   {/* ==================================================
@@ -605,12 +585,10 @@ export default function Projects() {
                     {/* Tecnologias */}
 
                     <div className="mt-5 flex flex-wrap gap-2">
-                      {project.technologies
-                        .slice(0, 4)
-                        .map((technology) => (
-                          <span
-                            key={technology}
-                            className="
+                      {project.technologies.slice(0, 4).map((technology) => (
+                        <span
+                          key={technology}
+                          className="
                               rounded-full
                               border
                               border-white/10
@@ -621,10 +599,10 @@ export default function Projects() {
                               font-medium
                               text-cyan-50/80
                             "
-                          >
-                            {technology}
-                          </span>
-                        ))}
+                        >
+                          {technology}
+                        </span>
+                      ))}
 
                       {project.technologies.length > 4 && (
                         <span
@@ -663,7 +641,6 @@ export default function Projects() {
                       "
                     >
                       Explorar projeto
-
                       <span>→</span>
                     </button>
                   </div>
@@ -697,8 +674,8 @@ export default function Projects() {
           <div className="mx-auto mb-5 h-px w-16 bg-gradient-to-r from-transparent via-cyan-200/40 to-transparent" />
 
           <p className="text-sm leading-6 text-sky-200/55">
-            Cada projeto representa uma parte diferente da minha
-            evolução como desenvolvedor.
+            Cada projeto representa uma parte diferente da minha evolução como
+            desenvolvedor.
           </p>
         </motion.div>
       </div>
@@ -836,9 +813,7 @@ export default function Projects() {
                           text-sky-100/70
                         "
                       >
-                        <span className="mr-2 text-cyan-200">
-                          •
-                        </span>
+                        <span className="mr-2 text-cyan-200">•</span>
 
                         {feature}
                       </div>
@@ -854,11 +829,10 @@ export default function Projects() {
                   </h4>
 
                   <div className="mt-3 flex flex-wrap gap-2">
-                    {modalData.technologies.map(
-                      (technology) => (
-                        <span
-                          key={technology}
-                          className="
+                    {modalData.technologies.map((technology) => (
+                      <span
+                        key={technology}
+                        className="
                             rounded-full
                             border
                             border-cyan-200/10
@@ -869,11 +843,10 @@ export default function Projects() {
                             font-medium
                             text-cyan-100/80
                           "
-                        >
-                          {technology}
-                        </span>
-                      )
-                    )}
+                      >
+                        {technology}
+                      </span>
+                    ))}
                   </div>
                 </div>
 
@@ -903,7 +876,6 @@ export default function Projects() {
                   "
                 >
                   Acessar projeto
-
                   <span>↗</span>
                 </a>
               </div>
